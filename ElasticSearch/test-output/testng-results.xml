@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2913" started-at="2016-12-08T15:59:23Z" finished-at="2016-12-08T15:59:26Z">
+    <groups>
+      <group name="ClientTest.ConnectionTest">
+        <method signature="ClientTest.ConnectionTest()[pri:0, instance:test.ClientTest@6b7906b3]" name="ConnectionTest" class="test.ClientTest"/>
+      </group> <!-- ClientTest.ConnectionTest -->
+    </groups>
+    <test name="Test" duration-ms="2913" started-at="2016-12-08T15:59:23Z" finished-at="2016-12-08T15:59:26Z">
+      <class name="crudtest.CrudDataTest">
+        <test-method status="PASS" signature="checkIndex()[pri:0, instance:crudtest.CrudDataTest@256f8274]" name="checkIndex" duration-ms="8" started-at="2016-12-08T21:44:24Z" finished-at="2016-12-08T21:44:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIndex -->
+        <test-method status="PASS" signature="createIndex()[pri:5, instance:crudtest.CrudDataTest@256f8274]" name="createIndex" duration-ms="349" depends-on-groups="ClientTest.ConnectionTest" started-at="2016-12-08T21:44:24Z" finished-at="2016-12-08T21:44:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createIndex -->
+        <test-method status="PASS" signature="termSuggestMethod(java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:crudtest.CrudDataTest@256f8274]" name="termSuggestMethod" duration-ms="109" started-at="2016-12-08T21:44:24Z" finished-at="2016-12-08T21:44:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[elasticsearch]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[elasticsearhc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[book]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termSuggestMethod -->
+        <test-method status="PASS" signature="createIndexp(java.lang.String)[pri:6, instance:crudtest.CrudDataTest@256f8274]" name="createIndexp" duration-ms="573" depends-on-groups="ClientTest.ConnectionTest" started-at="2016-12-08T21:44:24Z" finished-at="2016-12-08T21:44:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testindexp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createIndexp -->
+        <test-method status="PASS" signature="deleteDatap()[pri:0, instance:crudtest.CrudDataTest@256f8274]" name="deleteDatap" duration-ms="18" depends-on-groups="ClientTest.ConnectionTest" started-at="2016-12-08T21:44:25Z" depends-on-methods="crudtest.CrudDataTest.createIndexp, crudtest.CrudDataTest.checkIndex, crudtest.CrudDataTest.createIndex" finished-at="2016-12-08T21:44:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDatap -->
+        <test-method status="PASS" signature="deleteIndex(java.lang.String)[pri:1, instance:crudtest.CrudDataTest@256f8274]" name="deleteIndex" duration-ms="161" depends-on-groups="ClientTest.ConnectionTest" started-at="2016-12-08T21:44:25Z" depends-on-methods="crudtest.CrudDataTest.createIndexp, crudtest.CrudDataTest.createIndex" finished-at="2016-12-08T21:44:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testindex]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteIndex -->
+        <test-method status="PASS" signature="insertData()[pri:2, instance:crudtest.CrudDataTest@256f8274]" name="insertData" duration-ms="1308" depends-on-groups="ClientTest.ConnectionTest" started-at="2016-12-08T21:44:25Z" depends-on-methods="crudtest.CrudDataTest.checkIndex, crudtest.CrudDataTest.createIndex" finished-at="2016-12-08T21:44:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertData -->
+        <test-method status="PASS" signature="insertDatap(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:crudtest.CrudDataTest@256f8274]" name="insertDatap" duration-ms="77" depends-on-groups="ClientTest.ConnectionTest" started-at="2016-12-08T21:44:26Z" depends-on-methods="crudtest.CrudDataTest.createIndexp, crudtest.CrudDataTest.checkIndex" finished-at="2016-12-08T21:44:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testindexp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testtypep]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"Name":"Digya"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertDatap -->
+        <test-method status="PASS" signature="insertDataFromFilep(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:crudtest.CrudDataTest@256f8274]" name="insertDataFromFilep" duration-ms="21" depends-on-groups="ClientTest.ConnectionTest" started-at="2016-12-08T21:44:26Z" depends-on-methods="crudtest.CrudDataTest.checkIndex, crudtest.CrudDataTest.createIndex, crudtest.CrudDataTest.deleteIndex" finished-at="2016-12-08T21:44:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testindex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testtype]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[file.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertDataFromFilep -->
+      </class> <!-- crudtest.CrudDataTest -->
+      <class name="test.ClientTest">
+        <test-method status="PASS" signature="ConnectionTest()[pri:0, instance:test.ClientTest@6b7906b3]" name="ConnectionTest" duration-ms="183" started-at="2016-12-08T21:44:23Z" finished-at="2016-12-08T21:44:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConnectionTest -->
+      </class> <!-- test.ClientTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
